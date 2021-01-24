@@ -3,16 +3,10 @@ import { useState } from 'react';
 import Header from './components/header/header.component';
 import { Switch, Route } from 'react-router-dom';
 import Home from './pages/home/home.component';
-
-const SECTIONS_INITIAL = [
-    { id: 1, name: '2019', active: false },
-    { id: 2, name: '2020', active: false },
-    { id: 3, name: '2021', active: false },
-    { id: 4, name: 'Molio dirbiniai', active: false }
-];
+import { SECTIONS } from './assets/photos'
 
 function App() {
-  const [ sections, setSections ] = useState(SECTIONS_INITIAL); 
+  const [ sections, setSections ] = useState(SECTIONS); 
 
   const handleClick = id => {
     setSections(
@@ -28,7 +22,7 @@ function App() {
     <div className="App">
         <Header sections={sections} handleClick={handleClick}/>
         <Switch>
-          <Route exact path="/" component={Home}/>
+          <Route exact path="/" render={() => <Home sections={sections} handleClick={handleClick}/>}/>
         </Switch>
     </div>
   );

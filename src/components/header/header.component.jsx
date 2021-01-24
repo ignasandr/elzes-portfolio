@@ -13,11 +13,11 @@ const Header = ({ sections, handleClick }) => (
         {/* <LogoContainer>
         </LogoContainer> */}
         <OptionsContainer>
-            {sections.map(({id, active, name}) => (
-              <OptionLink to="/"
+            {sections.map(({id, active, name, route}) => (
+              <OptionLink to={`/${route}`}
                           key={id}
                           active={active ? 1 : 0}
-                          onClick={() => handleClick(id)}>{name}
+                          onClick={() => handleClick(id) }>{name}
               </OptionLink>
             ))}
         </OptionsContainer>
