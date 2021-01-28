@@ -15,9 +15,12 @@ export const HeaderContainer = styled.div`
 `;
 
 export const LogoContainer = styled(Link)`
-  height: 100%;
-  width: 70px;
-  padding: 25px;
+  color: #fff;
+  ${'' /* height: 100%; */}
+  font-size: 20px;
+  ${'' /* width: 70px; */}
+  padding: 10px 25px;
+  align-self: flex-end;
 `;
 
 export const OptionsContainer = styled.div`

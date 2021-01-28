@@ -3,15 +3,16 @@ import React from 'react';
 
 import {
   HeaderContainer,
-//   LogoContainer,
+  LogoContainer,
   OptionsContainer,
   OptionLink
 } from './header.styles';
 
 const Header = ({ sections, handleClick }) => (
     <HeaderContainer>
-        {/* <LogoContainer>
-        </LogoContainer> */}
+        <LogoContainer to={'/'} onClick={() => handleClick(0) }>
+          LOGO
+        </LogoContainer>
         <OptionsContainer>
             {sections.map(({id, active, name, route}) => (
               <OptionLink to={`/${route}`}

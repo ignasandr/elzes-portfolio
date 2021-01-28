@@ -45,11 +45,6 @@ export const SECTIONS = [
                 src: './img/2019/8.jpg',
                 width: 4,
                 height: 3
-            },
-            {
-                src: './img/2019/9.jpg',
-                width: 4,
-                height: 3
             }
         ]
     },   
@@ -63,13 +58,13 @@ export const SECTIONS = [
         [
             {
                 src: './img/2020/1.jpg',
-                width: 9,
-                height: 16
+                width: 16,
+                height: 9
             },
             {
                 src: './img/2020/2.jpg',
-                width: 16,
-                height: 9
+                width: 9,
+                height: 16
             },
             {
                 src: './img/2020/3.jpg',
@@ -121,7 +116,7 @@ export const SECTIONS = [
 
     { 
         id: 4,
-        name: "Molio dirbiniai",
+        name: "molis",
         route: "molis",
         active: false,
         photos:

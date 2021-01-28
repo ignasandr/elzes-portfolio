@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
-export const MenuItemContainer = styled.div`
+export const MenuItemContainer = styled(Link)`
 	height: 30vh;
 	min-width: 30%;
 	overflow: hidden;
@@ -22,10 +23,6 @@ export const MenuItemContainer = styled.div`
     &:nth-child(3n+3){
         margin-left: 7.5px;
     }
-    ${'' /* &:last-child {
-        margin-left: 0px;
-        margin-right: 0px;
-    } */}
 `;
 
 export const BackgroundImageContainer = styled.div`

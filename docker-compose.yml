@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+
+  elzes-portfolio-prod:
+    container_name: elzes-portfolio-prod
+    build:
+      context: .
+      dockerfile: Dockerfile
+    expose:
+    - '80'
+    restart: always
+    environment: 
+        VIRTUAL_HOST: audiopirtis.lt, www.audiopirtis.lt
+
+networks:
+  default:
+    external:
+      name: nginx-proxy
