@@ -1,5 +1,5 @@
 import './App.css';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Header from './components/header/header.component';
 import { Switch, Route } from 'react-router-dom';
 import Home from './pages/home/home.component';
